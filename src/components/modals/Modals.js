@@ -1,6 +1,7 @@
 import "./modals.scss";
 import "../../styles.scss";
 import React from "react";
+import { kontek, vivid, changeroom, cryptoparrot } from "./data";
 
 export default function Modals() {
   return (
@@ -15,7 +16,7 @@ export default function Modals() {
           </header>
           <div class="card-body">
             <h2 class="card-title">
-              <a>Vivid Seats</a>
+              <a>{vivid.company}</a>
             </h2>
             <div class="card-subtitle">Fullstack Dev</div>
             <p class="card-description">

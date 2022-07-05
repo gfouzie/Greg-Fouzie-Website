@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./intro.scss";
 import "../../styles.scss";
+import pic from "./images/standing.JPG";
 
 export default function Intro() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -18,6 +19,9 @@ export default function Intro() {
             SaaS startup ChangeRoom, and made Kontek Ecology's first
             client-facing web application.
           </h3>
+        </div>
+        <div className="image">
+          <img src={pic} alt="Greg standing :)" />
         </div>
       </div>
     </section>

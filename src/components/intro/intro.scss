@@ -1,13 +1,53 @@
 @import "../../tokens.scss";
 .landingWrapper {
-  max-width: 600px;
   height: 93vh;
+  width: inherit;
+  display: inline-block;
+  vertical-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .landingContent {
   padding-top: 34vh;
+  display: inline-block;
+  max-width: 600px;
 }
 
 .header {
-  padding-bottom: 3rem;
+  padding-bottom: $size-xl;
+}
+
+.image {
+  display: inline-block;
+  margin-left: $size-xxl;
+}
+
+img {
+  vertical-align: middle;
+  transform: translateY(-$size-xl);
+}
+
+@media (max-width: $breakpoint-laptop) {
+  img {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  img {
+    width: 350px;
+  }
+  .landingContent {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  img {
+    width: 400px;
+  }
+  .landingContent {
+    max-width: 600px;
+  }
 }

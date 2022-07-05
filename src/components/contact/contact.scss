@@ -9,6 +9,10 @@ h1 {
   font-size: $size-lg;
 }
 
+form {
+  margin: 50px auto 25px;
+  max-width: 600px;
+}
 #contact {
   min-height: 100vh;
   padding-top: 70px;
@@ -89,4 +93,15 @@ input:focus::placeholder {
 
 .contact-row {
   margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons {
+  display: inline-table;
+  margin: 0px auto;
+}
+
+.icon {
+  margin: 0px 10px;
 }

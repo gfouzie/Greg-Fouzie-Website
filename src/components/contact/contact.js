@@ -31,7 +31,7 @@ function Contact() {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
   return (
-    <section id="contact" className="container row">
+    <section id="contact" className="container">
       <h1>send me a message!</h1>
       <form onSubmit={onSubmit}>
         <div className="input-container">
@@ -71,13 +71,18 @@ function Contact() {
         </div>
       </form>
       <div className="contact-row">
-        <SocialIcon url="https://linkedin.com/in/gregfouzie" />
-        <SocialIcon url="https://github.com/gfouzie" />
-        <SocialIcon
-          className="circle-icon"
-          network="email"
-          url="mailto:gregfouzie@gmail.com"
-        />
+        <div className="icons">
+          <SocialIcon
+            className="icon"
+            url="https://linkedin.com/in/gregfouzie"
+          />
+          <SocialIcon className="icon" url="https://github.com/gfouzie" />
+          <SocialIcon
+            className="icon"
+            network="email"
+            url="mailto:gregfouzie@gmail.com"
+          />
+        </div>
       </div>
     </section>
   );
