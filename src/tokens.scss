@@ -1,0 +1,25 @@
+$color: coral;
+
+//breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1200px;
+
+//common sizes
+$size-xs: 8px;
+$size-sm: 12px;
+$size-md: 16px;
+$size-lg: 24px;
+$size-xl: 32px;
+$size-xxl: 64px;
+
+//colors
+$color-primary: #000;
+$color-secondary: #636364;
+$color-highlight: rgb(63, 40, 214);
+$color-highlight-hover: rgba(90, 70, 224, 0.34);
+
+//times
+$duration: 0.5s;
+$delay: 0.2s;

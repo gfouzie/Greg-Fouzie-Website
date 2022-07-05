@@ -1,0 +1,145 @@
+@import "../../tokens.scss";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 16px;
+  background-color: white;
+}
+
+/**
+* Title
+**/
+.title {
+  text-align: center;
+  transform: translateY(20px);
+  font-size: 45px;
+
+  color: $color-highlight;
+  text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+
+  max-width: 500px;
+
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(black, 0.1);
+
+  overflow: hidden;
+
+  transition: box-shadow $duration;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/**
+* THUMB
+**/
+
+.card-thumb {
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: $color-highlight-hover;
+  transition: height $duration;
+
+  img {
+    display: block;
+    opacity: 1;
+    object-fit: cover;
+    transform: scale(1);
+    transition: opacity $duration, transform $duration;
+  }
+}
+
+.card:hover .card-thumb img {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+
+.card-body {
+  position: relative;
+  height: 185px;
+  padding: 20px;
+  transition: height $duration;
+
+  .card:hover & {
+    height: 185px + 115px;
+  }
+}
+
+.card-title {
+  margin: 0;
+  padding: 0 0 10px 0;
+  color: $color-primary;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-subtitle {
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 19px;
+  color: $color-highlight;
+}
+
+.card-description {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 56px;
+  margin: 0;
+  padding: 0;
+  color: #666c74;
+  line-height: 27px;
+  opacity: 0;
+  transform: translateY(45px);
+  transition: opacity $duration -$delay, transform $duration -$delay;
+  transition-delay: 0s;
+
+  .card:hover & {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: $delay;
+  }
+}
+
+#experience {
+  z-index: 1;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+h1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

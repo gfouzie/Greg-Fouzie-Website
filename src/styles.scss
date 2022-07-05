@@ -1,0 +1,51 @@
+@import "./src/tokens.scss";
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .container {
+    max-width: 440px;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    max-width: 732px;
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  .container {
+    max-width: 968px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .container {
+    max-width: 1140px;
+  }
+}

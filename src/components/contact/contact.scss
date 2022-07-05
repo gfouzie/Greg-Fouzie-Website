@@ -1,0 +1,92 @@
+@import "../../tokens.scss";
+
+* {
+  font-size: $size-md;
+  font-family: inherit;
+}
+
+h1 {
+  font-size: $size-lg;
+}
+
+#contact {
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px 10px 10px;
+}
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+textarea,
+input {
+  width: 90%;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 2px solid $color-primary;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+textarea:focus,
+input:focus {
+  border: 2px solid $color-highlight-hover;
+}
+
+textarea:hover,
+input:hover {
+  border: 2px solid $color-highlight-hover;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: $color-highlight;
+  vertical-align: top;
+}
+
+textarea:focus::placeholder,
+input:focus::placeholder {
+  color: transparent;
+}
+
+.submit {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  height: 3rem;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.name {
+  height: 3rem;
+  padding-left: 10px;
+}
+.message {
+  height: 15rem;
+  padding-left: 10px;
+}
+.email {
+  height: 3rem;
+  padding-left: 10px;
+}
+
+.circle-icon {
+  height: 50px;
+  width: 50px;
+}
+.circle-icon:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px $color-primary;
+}
+
+.contact-row {
+  margin-bottom: 18px;
+}

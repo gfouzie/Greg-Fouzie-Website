@@ -1,0 +1,25 @@
+import { useState } from "react";
+import "./intro.scss";
+import "../../styles.scss";
+
+export default function Intro() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  return (
+    <section id="home" className="container">
+      <div className="landingWrapper">
+        <div className="landingContent">
+          <h1 className="header">
+            Hey, I'm Greg - A Software Dev from Ottawa.
+          </h1>
+          <h3>
+            I’ve developed pages and features for hundreds of millions of users
+            as a part of the Vivid Seats Web team, co-founded an award-winning
+            SaaS startup ChangeRoom, and made Kontek Ecology's first
+            client-facing web application.
+          </h3>
+        </div>
+      </div>
+    </section>
+  );
+}
