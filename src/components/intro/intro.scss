@@ -9,7 +9,7 @@
 }
 
 .landingContent {
-  padding-top: 34vh;
+  padding-top: 32vh;
   display: inline-block;
   max-width: 600px;
 }
@@ -25,7 +25,7 @@
 
 img {
   vertical-align: middle;
-  transform: translateY(-$size-xl);
+  transform: translateY(-$size-xxl);
 }
 
 @media (max-width: $breakpoint-laptop) {
@@ -36,7 +36,7 @@ img {
 
 @media (min-width: $breakpoint-laptop) {
   img {
-    width: 350px;
+    width: 325px;
   }
   .landingContent {
     max-width: 500px;

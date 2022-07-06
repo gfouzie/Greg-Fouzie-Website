@@ -7,7 +7,7 @@
 
 body {
   font-family: "Open Sans";
-  font-size: 16px;
+  font-size: $size-md;
   background-color: white;
 }
 
@@ -27,6 +27,7 @@ body {
   position: relative;
 
   max-width: 500px;
+  min-width: 460px;
 
   background-color: #fff;
   box-shadow: 0 0 30px rgba(black, 0.1);
@@ -38,6 +39,7 @@ body {
   a {
     color: inherit;
     text-decoration: none;
+    font-size: $size-subheader;
   }
 }
 
@@ -49,7 +51,6 @@ body {
   height: auto;
   max-width: 100%;
   overflow: hidden;
-  background-color: $color-highlight-hover;
   transition: height $duration;
 
   img {
@@ -58,6 +59,7 @@ body {
     object-fit: cover;
     transform: scale(1);
     transition: opacity $duration, transform $duration;
+    width: 100%;
   }
 }
 
@@ -80,7 +82,7 @@ body {
 .card-title {
   margin: 0;
   padding: 0 0 10px 0;
-  color: $color-primary;
+  color: $color-highlight;
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
@@ -90,7 +92,7 @@ body {
   margin: 0;
   padding: 0 0 10px 0;
   font-size: 19px;
-  color: $color-highlight;
+  color: $color-primary;
 }
 
 .card-description {
@@ -100,7 +102,7 @@ body {
   bottom: 56px;
   margin: 0;
   padding: 0;
-  color: #666c74;
+  color: $color-primary;
   line-height: 27px;
   opacity: 0;
   transform: translateY(45px);
@@ -111,6 +113,20 @@ body {
     opacity: 1;
     transform: translateY(0);
     transition-delay: $delay;
+  }
+}
+
+.card-preview {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 56px;
+  margin: 0;
+  padding: 0;
+  color: $color-primary;
+  line-height: 27px;
+  .card:hover & {
+    opacity: 0;
   }
 }
 

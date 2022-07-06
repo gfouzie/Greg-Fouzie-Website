@@ -18,10 +18,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-size: $size-header;
+}
+
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: $size-md;
+  padding-left: $size-md;
   margin-right: auto;
   margin-left: auto;
 }

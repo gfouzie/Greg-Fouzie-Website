@@ -1,7 +1,7 @@
 import "./styles.scss";
 import Navbar from "./components/navbar/Navbar";
 import Intro from "./components/intro/Intro";
-import Modals from "./components/modals/Modals";
+import Experience from "./components/experience/Experience";
 import Contact from "./components/contact/contact";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Intro />
-      <Modals />
+      <Experience />
       <Contact />
     </div>
   );

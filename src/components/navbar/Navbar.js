@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <section className="navigation-wrapper">
       <nav className="navigation container">
-        <a href="/" className="brand-name">
+        <a href="/" className="name-btn">
           greg fouzie
         </a>
         <button
@@ -37,7 +37,13 @@ export default function Navbar() {
         >
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }}
+              >
+                Home
+              </a>
             </li>
             <li>
               <a href="#experience">Experience</a>

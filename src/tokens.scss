@@ -1,5 +1,3 @@
-$color: coral;
-
 //breakpoints
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
@@ -13,12 +11,15 @@ $size-md: 16px;
 $size-lg: 24px;
 $size-xl: 32px;
 $size-xxl: 64px;
+$size-header: 28px;
+$size-subheader: 20px;
 
 //colors
 $color-primary: #000;
 $color-secondary: #636364;
-$color-highlight: rgb(63, 40, 214);
-$color-highlight-hover: rgba(90, 70, 224, 0.34);
+$color-highlight: #819bb4;
+$color-highlight-hover: #566879;
+$color-background: #fff;
 
 //times
 $duration: 0.5s;
