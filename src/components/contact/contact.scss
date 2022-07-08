@@ -65,10 +65,6 @@ input:focus::placeholder {
   cursor: pointer;
 }
 
-.submit:hover {
-  background-color: $color-highlight;
-}
-
 .name {
   height: 3rem;
   padding-left: $size-md;
@@ -105,12 +101,11 @@ input:focus::placeholder {
   margin: 0px $size-xs;
 }
 
-.captcha {
-  width: 90%;
-  display: block;
-  margin: 10px auto;
-  border-radius: 5px;
+.active {
+  background-color: $color-highlight;
+  transition: $duration;
 }
-.captcha > div {
-  width: 100%;
+
+.active > p {
+  text-decoration: bold;
 }

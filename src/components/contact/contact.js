@@ -8,20 +8,29 @@ import { mail } from "./data.ts";
 function Contact() {
   const [toSend, setToSend] = useState({
     from_name: "",
-    to_name: "",
     message: "",
     from_email: "",
   });
 
+  const [isActive, setIsActive] = useState(false);
+  const [buttonText, setButtonText] = useState("Submit");
+
   const onSubmit = (e) => {
     e.preventDefault();
-    send(mail.SERVICE_ID, mail.TEMPLATE_ID, toSend, mail.PUBLIC_KEY)
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
-      });
+    // send(mail.SERVICE_ID, mail.TEMPLATE_ID, toSend, mail.PUBLIC_KEY)
+    //   .then((response) => {
+    //     // console.log("SUCCESS!", response.status, response.text);
+    //   })
+    //   .catch((err) => {
+    //     // console.log("FAILED...", err);
+    //   });
+    // setToSend({
+    //   from_name: "",
+    //   message: "",
+    //   from_email: "",
+    // });
+    setIsActive(true);
+    setButtonText(isActive ? "Submit" : "SENT");
   };
 
   const handleChange = (e) => {
@@ -67,8 +76,11 @@ function Contact() {
           />
         </div>
         <div className="input-container">
-          <button className="submit" type="submit">
-            Submit
+          <button
+            className={isActive ? "submit active" : "submit"}
+            type="submit"
+          >
+            <p id="btnText">{buttonText}</p>
           </button>
         </div>
       </form>
