@@ -13,7 +13,7 @@ export default function Intro() {
           <h1 className="header">
             Hey, I'm Greg - A Software Dev from Ottawa.
           </h1>
-          <h3>
+          <h3 className="bio">
             I’ve developed pages and features for hundreds of millions of users
             as a part of the Vivid Seats Web team, co-founded an award-winning
             SaaS startup ChangeRoom, and made Kontek Ecology's first

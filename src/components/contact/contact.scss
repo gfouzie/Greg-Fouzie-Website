@@ -2,7 +2,6 @@
 
 * {
   font-size: $size-md;
-  font-family: inherit;
 }
 
 form {
@@ -33,16 +32,17 @@ input {
   border: 2px solid $color-primary;
   text-decoration: none;
   border-radius: 5px;
-}
-
-textarea:focus,
-input:focus {
-  border: 2px solid $color-highlight-hover;
+  font-family: "Open Sans";
 }
 
 textarea:hover,
-input:hover {
-  border: 2px solid $color-highlight-hover;
+input:hover,
+textarea:focus,
+input:focus,
+input[type]:focus,
+.uneditable-input:focus {
+  border-color: $color-highlight-hover;
+  outline: 0 none;
 }
 
 textarea::placeholder,
@@ -61,21 +61,25 @@ input:focus::placeholder {
   display: block;
   margin: 10px auto;
   height: 3rem;
-  padding-left: 10px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: $color-highlight;
 }
 
 .name {
   height: 3rem;
-  padding-left: 10px;
+  padding-left: $size-md;
 }
 .message {
   height: 15rem;
-  padding-left: 10px;
+  padding-left: $size-md;
 }
 .email {
   height: 3rem;
-  padding-left: 10px;
+  padding-left: $size-md;
 }
 
 .circle-icon {
@@ -88,7 +92,6 @@ input:focus::placeholder {
 }
 
 .contact-row {
-  margin-bottom: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,5 +102,15 @@ input:focus::placeholder {
 }
 
 .icon {
-  margin: 0px 10px;
+  margin: 0px $size-xs;
+}
+
+.captcha {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.captcha > div {
+  width: 100%;
 }

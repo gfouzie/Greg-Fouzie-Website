@@ -16,6 +16,7 @@
 
 .header {
   padding-bottom: $size-xl;
+  font-size: $size-xl;
 }
 
 .image {
@@ -26,6 +27,10 @@
 img {
   vertical-align: middle;
   transform: translateY(-$size-xxl);
+}
+
+.bio {
+  font-size: 18px;
 }
 
 @media (max-width: $breakpoint-laptop) {

@@ -1,12 +1,9 @@
 import "./contact.scss";
 import "../../styles.scss";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { send } from "emailjs-com";
 import { SocialIcon } from "react-social-icons";
-
-const SERVICE_ID = "service_o7nyctc";
-const TEMPLATE_ID = "template_8xa7eaq";
-const PUBLIC_KEY = "Z_cEs6eofK2LKfUGf";
+import { mail } from "./data.ts";
 
 function Contact() {
   const [toSend, setToSend] = useState({
@@ -18,7 +15,7 @@ function Contact() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    send(SERVICE_ID, TEMPLATE_ID, toSend, PUBLIC_KEY)
+    send(mail.SERVICE_ID, mail.TEMPLATE_ID, toSend, mail.PUBLIC_KEY)
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
       })
@@ -30,9 +27,11 @@ function Contact() {
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
+
+  const captchaRef = useRef(null);
   return (
     <section id="contact" className="container">
-      <h1>send me a message!</h1>
+      <h1>Send Me a Message</h1>
       <form onSubmit={onSubmit}>
         <div className="input-container">
           <input
@@ -42,6 +41,7 @@ function Contact() {
             placeholder="NAME"
             value={toSend.from_name}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="input-container">
@@ -52,6 +52,7 @@ function Contact() {
             placeholder="EMAIL"
             value={toSend.from_email}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="input-container">
@@ -62,6 +63,7 @@ function Contact() {
             placeholder="MESSAGE"
             value={toSend.message}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="input-container">
