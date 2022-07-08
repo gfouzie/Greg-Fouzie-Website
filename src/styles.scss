@@ -20,15 +20,13 @@ h1 {
 
 .container {
   width: 100%;
-  padding-right: $size-md;
-  padding-left: $size-md;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (max-width: $breakpoint-tablet) {
   .container {
-    max-width: 440px;
+    max-width: $breakpoint-mobile;
   }
 }
 

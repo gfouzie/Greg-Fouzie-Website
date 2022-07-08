@@ -140,14 +140,21 @@ h1 {
   gap: $size-xl;
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media (min-width: $breakpoint-laptop) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: $breakpoint-laptop) {
   .card-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media (min-width: $breakpoint-laptop) {
-  .card-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-laptop) {
+  .card-wrapper > article {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }

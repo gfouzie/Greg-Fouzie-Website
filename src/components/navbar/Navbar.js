@@ -5,6 +5,18 @@ import "../../styles.scss";
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
+  const onClickExperience = (e) => {
+    e && e.preventDefault();
+    document.getElementById("experience").scrollIntoView();
+    setIsNavExpanded(false);
+  };
+
+  const onClickContact = (e) => {
+    e && e.preventDefault();
+    document.getElementById("contact").scrollIntoView();
+    setIsNavExpanded(false);
+  };
+
   return (
     <section className="navigation-wrapper">
       <nav className="navigation container">
@@ -38,6 +50,7 @@ export default function Navbar() {
             <li>
               <a
                 onClick={() => {
+                  setIsNavExpanded(false);
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}
               >
@@ -45,10 +58,10 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <a onClick={() => onClickExperience()}>Experience</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a onClick={() => onClickContact()}>Contact</a>
             </li>
           </ul>
         </div>

@@ -11,7 +11,8 @@ export default function Intro() {
       <div className="landingWrapper">
         <div className="landingContent">
           <h1 className="header">
-            Hey, I'm Greg - A Software Dev from Ottawa.
+            Hey, I'm <span className="Greg">Greg Fouzie</span> - A Software Dev
+            from Ottawa.
           </h1>
           <h3 className="bio">
             I’ve developed pages and features for hundreds of millions of users

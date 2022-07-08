@@ -10,6 +10,11 @@
   background-color: $color-background;
   height: 70px;
 }
+
+.navigation-wrapper {
+  background-color: $color-background;
+}
+
 a {
   cursor: pointer;
 }
@@ -26,7 +31,13 @@ a {
 .navigation-menu ul {
   display: flex;
   padding: 0;
-  margin-top: $size-sm;
+  margin-top: $size-xs;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .navigation-menu ul {
+    border-top: black 1px solid;
+  }
 }
 
 .navigation-menu li {
