@@ -15,7 +15,8 @@
   background-color: $color-background;
 }
 
-a {
+a,
+.section-link {
   cursor: pointer;
 }
 .name-btn {
@@ -113,7 +114,7 @@ a {
     margin: 0;
   }
 
-  .navigation-menu li a {
+  .navigation-menu li div {
     color: $color-primary;
     width: 100%;
     padding: $size-xl 0;

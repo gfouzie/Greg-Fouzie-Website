@@ -48,20 +48,25 @@ export default function Navbar() {
         >
           <ul>
             <li>
-              <a
+              <div
+                className="section-link"
                 onClick={() => {
                   setIsNavExpanded(false);
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}
               >
                 Home
-              </a>
+              </div>
             </li>
             <li>
-              <a onClick={() => onClickExperience()}>Experience</a>
+              <div className="section-link" onClick={() => onClickExperience()}>
+                Experience
+              </div>
             </li>
             <li>
-              <a onClick={() => onClickContact()}>Contact</a>
+              <div className="section-link" onClick={() => onClickContact()}>
+                Contact
+              </div>
             </li>
           </ul>
         </div>

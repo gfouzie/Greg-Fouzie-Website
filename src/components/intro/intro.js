@@ -4,8 +4,6 @@ import "../../styles.scss";
 import pic from "./images/standing.JPG";
 
 export default function Intro() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
-
   return (
     <section id="home" className="container">
       <div className="landingWrapper">
