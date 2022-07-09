@@ -90,9 +90,6 @@ body {
 
 .card-description {
   position: absolute;
-  left: 20px;
-  right: 20px;
-  bottom: 56px;
   margin: 0;
   padding: 0;
   color: $color-primary;
@@ -130,7 +127,6 @@ body {
 }
 
 h1 {
-  padding-top: $size-xl;
   padding-bottom: $size-xl;
 }
 
@@ -162,5 +158,13 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .card {
+    position: relative;
+    max-width: 400px;
+    min-width: 300px;
   }
 }

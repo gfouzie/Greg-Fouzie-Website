@@ -26,7 +26,7 @@ h1 {
 
 @media (max-width: $breakpoint-tablet) {
   .container {
-    max-width: $breakpoint-mobile;
+    max-width: 400px;
   }
 }
 
