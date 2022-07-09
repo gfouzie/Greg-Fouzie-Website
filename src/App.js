@@ -1,8 +1,8 @@
 import "./styles.scss";
-import Navbar from "./components/navbar/navbar";
-import Intro from "./components/intro/intro";
-import Experience from "./components/experience/experience";
-import Contact from "./components/contact/contact";
+import Navbar from "./components/navbar/navbar.js";
+import Intro from "./components/intro/intro.js";
+import Experience from "./components/experience/experience.js";
+import Contact from "./components/contact/contact.js";
 
 function App() {
   return (
