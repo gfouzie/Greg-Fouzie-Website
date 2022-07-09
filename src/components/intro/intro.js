@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./intro.scss";
 import "../../styles.scss";
 import pic from "./images/standing.JPG";
