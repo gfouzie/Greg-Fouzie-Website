@@ -24,9 +24,15 @@ h1 {
   margin-left: auto;
 }
 
+@media (max-width: $breakpoint-mobile) {
+  .container {
+    width: 325px;
+  }
+}
+
 @media (max-width: $breakpoint-tablet) {
   .container {
-    max-width: 350px;
+    max-width: 400px;
   }
 }
 
