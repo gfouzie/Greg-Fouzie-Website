@@ -5,15 +5,15 @@ import "../../styles.scss";
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-  const onClickExperience = (e) => {
-    e && e.preventDefault();
-    document.getElementById("experience").scrollIntoView();
-    setIsNavExpanded(false);
-  };
-
   const onClickContact = (e) => {
     e && e.preventDefault();
     document.getElementById("contact").scrollIntoView();
+    setIsNavExpanded(false);
+  };
+
+  const onClickExperience = (e) => {
+    e && e.preventDefault();
+    document.getElementById("experience").scrollIntoView();
     setIsNavExpanded(false);
   };
 
