@@ -1,6 +1,6 @@
 import "./contact.scss";
 import "../../styles.scss";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { send } from "emailjs-com";
 import { SocialIcon } from "react-social-icons";
 import { mail } from "./data.ts";
@@ -37,7 +37,6 @@ function Contact() {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
-  const captchaRef = useRef(null);
   return (
     <section id="contact" className="container">
       <h1>Send Me a Message</h1>

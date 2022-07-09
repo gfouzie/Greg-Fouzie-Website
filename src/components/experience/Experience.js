@@ -2,10 +2,10 @@ import "./experience.scss";
 import "../../styles.scss";
 import React from "react";
 import { kontek, vivid, changeroom, cryptoparrot } from "./data.ts";
-import cryptoparrot_pic from "./images/cryptoparrot_temp.png";
-import vivid_pic from "./images/vivid_temp.png";
+import cryptoparrot_pic from "./images/cryptoparrot.png";
+import vivid_pic from "./images/vivid.png";
 import changeroom_pic from "./images/changeroom.png";
-import kontek_pic from "./images/kontek_temp.png";
+import kontek_pic from "./images/kontek.png";
 
 export default function Modals() {
   return (
@@ -14,9 +14,9 @@ export default function Modals() {
       <div className="card-wrapper">
         <article className="card">
           <header className="card-thumb">
-            <a>
-              <img src={vivid_pic} />
-            </a>
+            <div>
+              <img alt="vivid seats img" src={vivid_pic} />
+            </div>
           </header>
           <div className="card-body">
             <h2 className="card-title">
@@ -30,9 +30,9 @@ export default function Modals() {
 
         <article className="card">
           <header className="card-thumb">
-            <a>
-              <img src={kontek_pic} />
-            </a>
+            <div>
+              <img alt="kontek img" src={kontek_pic} />
+            </div>
           </header>
           <div className="card-body">
             <h2 className="card-title">
@@ -46,9 +46,9 @@ export default function Modals() {
 
         <article className="card">
           <header className="card-thumb">
-            <a>
-              <img src={changeroom_pic} />
-            </a>
+            <div>
+              <img alt="changeroom pic" src={changeroom_pic} />
+            </div>
           </header>
           <div className="card-body">
             <h2 className="card-title">
@@ -62,9 +62,9 @@ export default function Modals() {
 
         <article className="card">
           <header className="card-thumb">
-            <a>
-              <img src={cryptoparrot_pic} />
-            </a>
+            <div>
+              <img alt="cryptoparrot img" src={cryptoparrot_pic} />
+            </div>
           </header>
           <div className="card-body">
             <h2 className="card-title">

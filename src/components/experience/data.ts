@@ -11,7 +11,7 @@ export const vivid = {
   company: "Vivid Seats",
   title: "Fullstack Developer",
   description:
-    "I currently work in a large team that develops new features and optimizes existing code to provide an outstanding user experience for the website which has hundreds of millions of monthly visitors. Tech: ReactJS, TS, Strapi, Jenkins, Jest, Next.js, Docker.",
+    "I currently work in a large team that develops new features and optimizes existing code to provide an outstanding user experience for the website which has over a hundred million annual visits. Tech: ReactJS, TS, Strapi, Jenkins, Jest, Next.js, Docker.",
   link: "https://www.vividseats.com/",
   preview: "I currently work in a large team that...",
 };

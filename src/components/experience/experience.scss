@@ -32,7 +32,8 @@ body {
 
   transition: box-shadow $duration;
 
-  a {
+  a,
+  div {
     color: inherit;
     text-decoration: none;
     font-size: $size-subheader;
@@ -143,6 +144,11 @@ h1 {
 @media (min-width: $breakpoint-laptop) {
   .card-wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card-title > a:hover {
+    padding: $size-xs;
+    color: $color-background;
+    background-color: $color-highlight;
   }
 }
 @media (max-width: $breakpoint-laptop) {
