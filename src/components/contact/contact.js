@@ -19,10 +19,10 @@ function Contact() {
     e.preventDefault();
     send(mail.SERVICE_ID, mail.TEMPLATE_ID, toSend, mail.PUBLIC_KEY)
       .then((response) => {
-        // console.log("SUCCESS!", response.status, response.text);
+        console.log("SUCCESS!", response.status, response.text);
       })
       .catch((err) => {
-        // console.log("FAILED...", err);
+        console.log("FAILED...", err);
       });
     setToSend({
       from_name: "",
