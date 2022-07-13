@@ -90,15 +90,12 @@ body {
 
 .card-description {
   position: absolute;
-  margin: 0;
-  padding: 0;
   color: $color-primary;
-  line-height: 27px;
   opacity: 0;
   transform: translateY(45px);
   transition: opacity $duration -$delay, transform $duration -$delay;
   transition-delay: 0s;
-
+  padding-right: $size-md;
   .card:hover & {
     opacity: 1;
     transform: translateY(0);
@@ -112,8 +109,11 @@ body {
   padding: 0;
   color: $color-primary;
   line-height: 27px;
+  transition-delay: $delay;
+
   .card:hover & {
     opacity: 0;
+    transition-delay: $delay;
   }
 }
 
