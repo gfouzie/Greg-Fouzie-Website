@@ -12,10 +12,10 @@ export default function Intro() {
             from Ottawa.
           </h1>
           <h3 className="bio">
-            I’ve developed pages and features for tens of millions of monthly
-            users as a part of the Vivid Seats Web team, co-founded an
-            award-winning SaaS startup ChangeRoom, and made Kontek Ecology's
-            first client-facing web application.
+            I’ve developed pages and features for millions of monthly users as a
+            part of the Vivid Seats Web team, co-founded an award-winning SaaS
+            startup ChangeRoom, and created Kontek Ecology's first client-facing
+            web application.
           </h3>
         </div>
         <div className="image">
