@@ -2,7 +2,7 @@ export const kontek = {
   company: "Kontek Ecology",
   title: "Fullstack Developer",
   description:
-    "Contributed in the creation of Kontek’s first client-facing web app which recorded live data from projects and displayed it to clients through customizable graphs, charts, and other widgets. Tech: AngularJS, Express.js, Node, REST APIs, MYSQL, Postgres, Docker.",
+    "Contributed to the creation of Kontek’s first client-facing web app which recorded live data from projects and displayed it to clients through customizable graphs, charts, and other widgets. Tech: AngularJS, Express.js, Node, REST APIs, MYSQL, Postgres, Docker.",
   link: "https://www.kontekwater.com/",
   preview: "Contributed in the creation of Kontek’s first ...",
 };
