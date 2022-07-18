@@ -1,6 +1,6 @@
 import "./intro.scss";
 import "../../styles.scss";
-import pic from "./images/standing.JPG";
+import pic from "./images/standing_tiny.JPG";
 
 export default function Intro() {
   return (

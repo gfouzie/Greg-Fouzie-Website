@@ -2,10 +2,10 @@ import "./experience.scss";
 import "../../styles.scss";
 import React from "react";
 import { kontek, vivid, changeroom, cryptoparrot } from "./data.ts";
-import cryptoparrot_pic from "./images/cryptoparrot.png";
-import vivid_pic from "./images/vivid.png";
-import changeroom_pic from "./images/changeroom.png";
-import kontek_pic from "./images/kontek.png";
+import cryptoparrot_pic from "./images/cryptoparrot_tiny.png";
+import vivid_pic from "./images/vivid_tiny.png";
+import changeroom_pic from "./images/changeroom_tiny.png";
+import kontek_pic from "./images/kontek_tiny.png";
 
 export default function Modals() {
   return (
